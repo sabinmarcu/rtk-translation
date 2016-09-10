@@ -4,7 +4,8 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "prepublish": "node_modules/.bin/gulp"
+    "prepublish": "node_modules/.bin/gulp",
+    "init": "npm install --ignore-scripts"
   },
   "author": "Sabin Marcu <sabinmarcu@gmail.com>",
   "license": "ISC",
