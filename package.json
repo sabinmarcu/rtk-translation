@@ -24,6 +24,7 @@
     "jquery": "^3.1.0",
     "lyef-flags": "^1.0.2",
     "react-toolbox": "^1.2.1",
-    "rtk-state": "^1.0.0"
+    "rtk-state": "^1.0.0",
+    "gulp-sequence": "^0.4.6"
   }
 }
