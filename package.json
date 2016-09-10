@@ -1,0 +1,23 @@
+{
+  "name": "rtk-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "node_modules/.bin/gulp"
+  },
+  "author": "Sabin Marcu <sabinmarcu@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-sabinmarcu": "^1.1.1",
+    "babel-register": "^6.14.0",
+    "eslint": "^2.13.1",
+    "eslint-config-sabinmarcu": "^1.1.1",
+    "flow-bin": "^0.28.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean": "^0.3.2",
+  }
+}
