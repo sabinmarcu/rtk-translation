@@ -8,15 +8,15 @@ gulp.task("clean", (): any =>
 );
 
 gulp.task("compile", (): any =>
-    gulp.src("src/modules/**/*.js")
+    gulp.src("src/**/*.js")
         .pipe(babel())
         .pipe(gulp.dest("lib"))
 );
 
 gulp.task("copy", (): any =>
     gulp.src([
-        "src/modules/**/*",
-        "!src/modules/**/*.js",
+        "src/**/*",
+        "!src/**/*.js",
     ])
         .pipe(gulp.dest("lib"))
 );
