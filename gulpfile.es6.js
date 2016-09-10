@@ -13,4 +13,12 @@ gulp.task("compile", (): any =>
         .pipe(gulp.dest("lib"))
 );
 
-gulp.task("default", ["clean", "compile"]);
+gulp.task("copy", (): any =>
+    gulp.src([
+        "src/modules/**/*",
+        "!src/modules/**/*.js",
+    ])
+        .pipe(gulp.dest("lib"))
+);
+
+gulp.task("default", ["clean", "copy", "compile"]);
