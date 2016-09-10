@@ -22,4 +22,4 @@ gulp.task("copy", (): any =>
         .pipe(gulp.dest("lib"))
 );
 
-gulp.task("default", sequence("clean", "copy", "compile"));
+gulp.task("default", sequence("clean", ["copy", "compile"]));
