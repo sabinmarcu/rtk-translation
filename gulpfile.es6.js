@@ -1,6 +1,7 @@
 const gulp = require("gulp");
 const babel = require("gulp-babel");
 const clean = require("gulp-clean");
+const copy = require("gulp-copy");
 
 gulp.task("clean", (): any =>
     gulp.src("lib/**/*", { read: false })
@@ -13,4 +14,13 @@ gulp.task("compile", (): any =>
         .pipe(gulp.dest("lib"))
 );
 
-gulp.task("default", ["clean", "compile"]);
+gulp.task("copy", (): any =>
+    gulp.src([
+        "src/modules/**/*",
+        "!src/modules/**/*.js",
+    ])
+        .pipe(babel())
+        .pipe(copy("lib"))
+);
+
+gulp.task("default", ["clean", "compile", "copy"]);
